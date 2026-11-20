@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syan · Mind Melody</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #FAF6EF;
+      --blue: #2F4858;
+      --lilac: #B7A6D9;
+      --coral: #E88C7D;
+      --mustard: #E7B75F;
+      --charcoal: #2E2E2E;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: "Fraunces", serif;
+      font-size: clamp(2.4rem, 7vw, 4rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
+      color: var(--blue);
+    }
+
+    .name-note {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      color: var(--coral);
+    }
+
+    .intro {
+      max-width: 560px;
+      font-size: 1.05rem;
+    }
+
+    .divider {
+      width: 72px;
+      height: 2px;
+      background: var(--lilac);
+      border: 0;
+      margin: 40px 0;
+    }
+
+    h2 {
+      font-family: "Fraunces", serif;
+      color: var(--blue);
+      font-size: 1.4rem;
+      margin: 0 0 14px;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .interests li {
+      border: 1px solid rgba(47, 72, 88, 0.22);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      background: rgba(183, 166, 217, 0.14);
+    }
+
+    .card {
+      border: 1px solid rgba(47, 72, 88, 0.18);
+      border-radius: 22px;
+      padding: 26px;
+      background: #fffdf8;
+      box-shadow: 0 10px 30px rgba(47, 72, 88, 0.06);
+    }
+
+    .mind-title {
+      font-family: "Fraunces", serif;
+      font-size: 1.3rem;
+      color: var(--blue);
+      margin: 0 0 8px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .primary {
+      background: var(--blue);
+      color: var(--cream);
+    }
+
+    .ghost {
+      border: 1px solid rgba(47, 72, 88, 0.3);
+      color: var(--blue);
+    }
+
+    footer {
+      margin-top: 64px;
+      font-size: 0.88rem;
+      color: rgba(46, 46, 46, 0.65);
+    }
+
+    .note {
+      display: inline-block;
+      transform: rotate(-8deg);
+      color: var(--mustard);
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 44px 20px 72px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="eyebrow">a little introduction</p>
+
+    <h1>
+      Hi, I’m Syan<br />
+      <span class="name-note">also known as Musyi</span>
+    </h1>
+
+    <p class="intro">
+      An aspiring Psychology undergraduate, curious about how music, emotion, and well-being meet. I like research, history, singing, writing, coding, and trying to understand people a little more gently.
+    </p>
+
+    <hr class="divider" />
+
+    <section>
+      <h2>What I’m exploring</h2>
+      <ul class="interests">
+        <li>Psychology of music</li>
+        <li>Emotion &amp; well-being</li>
+        <li>Research</li>
+        <li>Creative coding</li>
+        <li>Writing</li>
+        <li>Singing</li>
+        <li>History</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-top: 48px;">
+      <p class="mind-title">Mind Melody <span class="note">♪</span></p>
+      <p>
+        A small digital world about thoughts, feelings, and the melodies that help us name them.
+      </p>
+      <div class="links">
+        <a class="button primary" href="https://v0-chapter-18.vercel.app/">Visit Mind Melody</a>
+        <a class="button ghost" href="https://github.com/isyanaarlisya315-source">GitHub</a>
+        <a class="button ghost" href="mailto:isyanaarlisya315@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <footer>
+      Made with intention, warmth, and a little bit of melody.
+    </footer>
+  </main>
+</body>
+</html>
